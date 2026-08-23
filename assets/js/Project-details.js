@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             type: "Web Application",
             architecture: "MVC Architecture",
-            role: "Developer",
+            role: "Full Stack Developer",
             database: "SQL Server",
 
             technologies: [
@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             type: "Web Application",
             architecture: "MVC Architecture",
-            role: "Developer",
+            role: "Full Stack Developer",
             database: "SQL Server",
 
             technologies: [
