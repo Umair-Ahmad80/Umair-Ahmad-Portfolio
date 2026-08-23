@@ -137,9 +137,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     alt: "EyeHospitalAdminDashboard"
                 },
                 {
-                    src: "assets/img/portfolio/HospitalDRDashboard.png",
+                    src: "assets/img/portfolio/HospitalDrDashboard.png",
                     title: "Eye Hospital Doctor Dashboard",
-                    alt: "InstituteDoctorDashboard"
+                    alt: "EyeHospitalDoctorDashboard"
                 },
                 {
                     src: "assets/img/portfolio/HospitalOptopDashboard.png",
