@@ -45,6 +45,7 @@
       <h1 class="sitename">Umair Ahmad</h1>
     </a>
 
+
     <div class="social-links text-center">
       <a href="https://www.facebook.com/people/Umair-Ahmad/pfbid02f978one8HuDD9yTPmQdWf4ncPZ7R1ggMdNGYnVZDPhVvVELHGfjXYMdc9RJk299gl/" class="facebook"><i class="bi bi-facebook"></i></a>
       <a href="https://www.instagram.com/mr.umairahmad/" class="instagram"><i class="bi bi-instagram"></i></a>
@@ -64,6 +65,233 @@
         <a href="Umair-Ahmad(dot net).pdf" Download="Umair_Ahmad(Dot Net)"><button class="fa fa-download">&nbsp; Download Resume</button></a>
       </ul>
     </nav>
+
+    <style>
+      /*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.portfolio .row {
+  row-gap: 25px;
+}
+
+/* Project Card */
+
+#portfolio .designed-project-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+#portfolio .designed-project-card:hover {
+  transform: translateY(-7px);
+  border-color: #149ddd;
+  box-shadow: 0 15px 35px rgba(20, 157, 221, 0.15);
+}
+
+
+/* Project Image */
+
+#portfolio .designed-project-image {
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+  background: #f5f7f9;
+}
+
+#portfolio .designed-project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+#portfolio .designed-project-card:hover
+.designed-project-image img {
+  transform: scale(1.05);
+}
+
+
+/* Badge */
+
+#portfolio .project-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #149ddd;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+
+/* Content */
+
+#portfolio .designed-project-content {
+  padding: 20px;
+}
+
+
+/* Heading */
+
+#portfolio .project-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#portfolio .project-heading h3 {
+  margin: 0;
+  color: #050d18;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+
+/* Arrow */
+
+#portfolio .project-arrow {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef8fd;
+  color: #149ddd;
+
+  border-radius: 50%;
+
+  transition: all 0.3s ease;
+}
+
+#portfolio .designed-project-card:hover
+.project-arrow {
+  background: #149ddd;
+  color: #ffffff;
+  transform: translate(3px, -3px);
+}
+
+
+/* Divider */
+
+#portfolio .project-divider {
+  height: 1px;
+  background: #eeeeee;
+  margin: 18px 0;
+}
+
+
+/* Footer */
+
+#portfolio .project-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
+/* Demo Button */
+
+#portfolio .project-demo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  background: #149ddd;
+  color: #ffffff !important;
+
+  padding: 9px 15px;
+
+  border-radius: 7px;
+  border: 1px solid #149ddd;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+#portfolio .project-demo-btn:hover {
+  background: #0f82b9;
+  border-color: #0f82b9;
+  color: #ffffff !important;
+}
+
+
+/* Details Button */
+
+#portfolio .project-details-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #149ddd !important;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+#portfolio .project-details-btn:hover {
+  color: #0f82b9 !important;
+}
+
+#portfolio .project-details-btn i {
+  transition: transform 0.3s ease;
+}
+
+#portfolio .project-details-btn:hover i {
+  transform: translateX(4px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+  #portfolio .designed-project-image {
+    height: 190px;
+  }
+
+  #portfolio .designed-project-content {
+    padding: 16px;
+  }
+
+  #portfolio .project-heading h3 {
+    font-size: 17px;
+  }
+
+  #portfolio .project-footer {
+    flex-wrap: wrap;
+  }
+
+}
+    </style>
   </header>
 
   <main class="main">
@@ -76,7 +304,8 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h3>Hi, I'm  </h3><h3 id="name" >Umair Ahmad</h3>
-        <p><span class="typed" data-typed-items="Full Stack Web Developer , Dot NET Developer">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p><span class="typed" data-typed-items="Full Stack Web Developer , .NET Full Stack Developer">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <span style="color: #ffff; text-shadow:1px 1px 5px #000;">Creating scalable and user-friendly web applications with modern .NET technologies</span>
       </div>
 
     </section><!-- /Hero Section -->
@@ -87,7 +316,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>A motivated and detail-oriented individual with a Bachelor of Computer Applications (BCA) degree and currently enhancing skills in Full Stack web Development. Seeking a job where I can challenge my potential, put my skills to good use and grow my career exponentially. Hard-working, goal-oriented, and a team player seeking an opportunity to incorporate my skills and put them to use.</p>
+        <p>I’m a .NET Full Stack Developer with hands-on experience in developing and maintaining web applications using C#, ASP.NET MVC, ASP.NET Core, SQL Server, Entity Framework, JavaScript, and Bootstrap. I focus on building reliable, scalable, and user-friendly applications while following clean and maintainable development practices. I’m passionate about solving real-world problems through technology and continuously expanding my technical expertise.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -97,20 +326,21 @@
             <img src="assets/img/mypic.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>Dot NET Full Stack Developer.</h2>
+            <h2>.NET Full Stack Developer</h2>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Umair Ahmad</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Date Of Birth:</strong> <span>15 March 2003</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Address:</strong> <span>Amravati Maharashtra,India</span></li>
+                  <li><i class="bi bi-person-fill"></i> <strong>Name:</strong> <span>Umair Ahmad</span></li>
+                
+                  <li><i class="bi bi-telephone-fill"></i><strong>Phone:</strong> <span>+91 8080616311</span></li>
+                     <li><i class="bi bi-laptop-fill"></i> <strong>Specialization:</strong> <span style="font-size: 14px;">.NET Full Stack development</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8080616311</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>umairahmad1180@gmail.com</span></li>
+                    <li><i class="bi bi-geo-fill"></i> <strong>Location:</strong> <span>Pune Maharashtra,India</span></li>
+                  <li><i class="bi bi-envelope-open-fill"></i> <strong>Email:</strong> <span>umairahmad1180@gmail.com</span></li>
+                   <li><i class="bi bi-briefcase-fill"></i> <strong>Experience:</strong> <span>9 Months</span></li>
                 </ul>
               </div>
             </div>
@@ -124,116 +354,312 @@
     </section><!-- /About Section -->
 
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section white-background">
+<!-- Skills Section -->
+<section id="skills" class="skills section white-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>I've gained skills both in college and through this course, including becoming proficient in languages like C, C++, and .NET .</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills</h2>
+    <p>
+    My skills have grown through a combination of academic learning, professional training, work experience, and hands-on projects. My journey as a software developer has helped me gain practical knowledge and continuously improve my technical abilities.
+    </p>
+  </div>
+  <!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row skills-content skills-animation">
+    <div class="skills-category mb-5">
 
-          <div class="col-lg-6">
-            
-            <div class="progress">
-              <span class="skill"><span>ASP.NET</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+      <h3 class="mb-4">
+        <i class="bi bi-code-slash"></i> .NET & Backend Development
+      </h3>
 
-              <div class="progress">
-              <span class="skill"><span>ASP.NET MVC</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-             
-              <div class="progress">
-              <span class="skill"><span>Web API</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            
-              <div class="progress">
-              <span class="skill"><span>ASP.NET Core</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+      <div class="row skills-content skills-animation">
 
-              <div class="progress">
-              <span class="skill"><span>C#</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap ">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+        <div class="col-lg-6">
 
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress">
+            <span class="skill">
+              <span>C#</span>
+              <i class="val">90%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="90"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
               </div>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>Bootstrap</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>C</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>SQL/PL-SQL</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+            </div>
           </div>
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>JQuery</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
 
-           
-              
-            <div class="progress">
-              <span class="skill"><span>C++</span> <i class="val">40%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress">
+            <span class="skill">
+              <span>ASP.NET</span>
+              <i class="val">85%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="85"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
               </div>
-            </div><!-- End Skills Item -->
+            </div>
           </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>ASP.NET MVC</span>
+              <i class="val">90%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="90"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>ASP.NET Core</span>
+              <i class="val">85%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="85"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">
+              <span>Web API</span>
+              <i class="val">75%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="75"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>ADO.NET</span>
+              <i class="val">85%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="85"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>DevExpress</span>
+              <i class="val">85%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="85"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-      <div style="text-align: center;">
-        <a href="Umair-Ahmad(dot net).pdf" Download="Umair_Ahmad(Dot Net)"><button class="fa fa-download"  id="btn"> &nbsp; Download Resume</button></a>
+    </div>
+    <div class="skills-category mb-5">
+
+      <h3 class="mb-4">
+        <i class="bi bi-window"></i> Frontend Development
+      </h3>
+
+      <div class="row skills-content skills-animation">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">
+              <span>HTML</span>
+              <i class="val">95%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="95"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>CSS</span>
+              <i class="val">90%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="90"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>Bootstrap</span>
+              <i class="val">90%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="90"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">
+              <span>JavaScript</span>
+              <i class="val">75%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="75"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>jQuery</span>
+              <i class="val">75%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="75"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-    </section><!-- /Skills Section -->
+    </div>
+    <div class="skills-category mb-5">
+
+      <h3 class="mb-4">
+        <i class="bi bi-database"></i> Programming & Database
+      </h3>
+
+      <div class="row skills-content skills-animation">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">
+              <span>C</span>
+              <i class="val">85%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="85"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>C++</span>
+              <i class="val">40%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="40"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">
+              <span>SQL / PL-SQL</span>
+              <i class="val">85%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="85"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align: center;">
+    <a href="Umair-Ahmad(dot net).pdf" download="Umair_Ahmad(Dot Net)">
+      <button class="fa fa-download" id="btn">
+        &nbsp; Download Resume
+      </button>
+    </a>
+  </div>
+
+</section>
+<!-- /Skills Section -->
 
     <!-- Education Section -->
     <section id="Education" class="resume section">
@@ -274,17 +700,17 @@
     </section><!-- /Education Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+    <!-- <section id="portfolio" class="portfolio section light-background"> -->
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <b><u><h3>My Work</h3></u></b>
-      </div><!-- End Section Title-->
+      </div>End Section Title -->
 
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/image.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -292,8 +718,239 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
-    </section><!-- /Portfolio Section -->
+            </div>End Portfolio Item -->
+    <!-- </section>/Portfolio Section -->
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>Explore some of my projects and professional work.</p>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- ================================
+           Institute Management System
+      ================================= -->
+      <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="designed-project-card">
+
+          <div class="designed-project-image">
+
+            <img src="assets/img/portfolio/InstitueManagementLanding.png"
+                 alt="Institute Management System">
+
+            <span class="project-badge">
+              Institute Management System 
+            </span>
+
+          </div>
+
+          <div class="designed-project-content">
+
+            <div class="project-heading">
+              <h3>ATTENDANCE & TASK MANAGEMENT SYSTEM </h3>
+              <span class="project-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </span>
+            </div>
+
+            <div class="project-divider"></div>
+
+            <div class="project-footer">
+
+              <a href="#"
+                 target="_blank"
+                 class="project-demo-btn">
+                <i class="bi bi-play-circle"></i>
+                Live Demo
+              </a>
+
+              <a href="portfolio-details.html?project=InstituteManagement"
+                 class="project-details-btn">
+                View Details
+                <i class="bi bi-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================================
+           Eye Hospital Management System
+      ================================= -->
+      <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="designed-project-card">
+
+          <div class="designed-project-image">
+
+            <img src="assets/img/portfolio/EyeHospitalCardImage.png"
+                 alt="Eye Hospital Management System">
+
+            <span class="project-badge">
+              Healthcare
+            </span>
+
+          </div>
+
+          <div class="designed-project-content">
+
+            <div class="project-heading">
+              <h3>Eye Hospital Management System</h3>
+              <span class="project-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </span>
+            </div>
+
+            <div class="project-divider"></div>
+
+            <div class="project-footer">
+
+              <a href="#"
+                 target="_blank"
+                 class="project-demo-btn">
+                <i class="bi bi-play-circle"></i>
+                Live Demo
+              </a>
+
+              <a href="portfolio-details.html?project=EyeHospital"
+                 class="project-details-btn">
+                View Details
+                <i class="bi bi-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================================
+           Laptop Service Management System
+      ================================= -->
+      <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+
+        <div class="designed-project-card">
+
+          <div class="designed-project-image">
+
+            <img src="assets/img/portfolio/LaptopServiceLanding.png"
+                 alt="Laptop Service Management System">
+
+            <span class="project-badge">
+              Service Management
+            </span>
+
+          </div>
+
+          <div class="designed-project-content">
+
+            <div class="project-heading">
+              <h3>Laptop Service Management System</h3>
+              <span class="project-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </span>
+            </div>
+
+            <div class="project-divider"></div>
+
+            <div class="project-footer">
+
+              <a href="#"
+                 target="_blank"
+                 class="project-demo-btn">
+                <i class="bi bi-play-circle"></i>
+                Live Demo
+              </a>
+
+              <a href="portfolio-details.html?project=LaptopServices"
+                 class="project-details-btn">
+                View Details
+                <i class="bi bi-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================================
+           Courier Booking System
+      ================================= -->
+      <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+
+        <div class="designed-project-card">
+
+          <div class="designed-project-image">
+
+            <img src="assets/img/portfolio/courier-booking.png"
+                 alt="Courier Booking System">
+
+            <span class="project-badge">
+              Booking System
+            </span>
+
+          </div>
+
+          <div class="designed-project-content">
+
+            <div class="project-heading">
+              <h3>Courier Booking System</h3>
+              <span class="project-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </span>
+            </div>
+
+            <div class="project-divider"></div>
+
+            <div class="project-footer">
+
+              <a href="#"
+                 target="_blank"
+                 class="project-demo-btn">
+                <i class="bi bi-play-circle"></i>
+                Live Demo
+              </a>
+
+              <a href="portfolio-details.html?project=CourierBooking"
+                 class="project-details-btn">
+                View Details
+                <i class="bi bi-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- /Portfolio Section -->
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -314,8 +971,8 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>Address:</h3>
-                  <p>Amravati, Maharashtra 444604</p>
+                  <h3>Location:</h3>
+                  <p>Pune, Maharashtra 444604</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -335,8 +992,14 @@
                   <p><a href="mailto:umairahmad1180@gmail.com">umairahmad1180@gmail.com</a></p>
                 </div>
               </div><!-- End Info Item -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119270.54670247904!2d77.76174549999999!3d20.9040872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a4a67774bc15%3A0x3c7b3f78ca4f9635!2sAmravati%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1720252566208!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+         <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242147.93969692083!2d73.70980803191016!3d18.50350875716866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1786970597268!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+        </div>
           </div>
 
           <div class="col-lg-7">
